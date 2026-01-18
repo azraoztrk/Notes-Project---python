@@ -1,28 +1,42 @@
-# Notes App
+# 🗒️ Notes App (Python + SQLite)
 
-A simple Python Notes Application to add, list, delete, and search notes.  
-Each note is automatically tagged with the date it was created.  
+A simple command-line notes application written in Python.  
+Originally using JSON for storage, this project was later migrated to **SQLite** to practice database integration and CRUD operations.
 
-## Features
+---
 
-- ➕ **Add Note:** Add a new note with the current date automatically included.
-- 🗒️ **List Notes:** View all notes with their creation dates.
-- 🗑️ **Delete Note:** Remove any note by choosing its number.
-- 🔍 **Search Notes:** Search notes by keyword (case-insensitive) using regex.
-- ✅ **Persistent Storage:** All notes are saved to `notesList.json` automatically.
+## 🚀 Features
 
-## How to Use
+- ➕ Add notes with date
+- 📋 List all notes
+- 🗑️ Delete notes
+- 🔍 Search notes by keyword
+- 💾 Persistent storage using SQLite
 
-1. Run the program: `python notesApp.py`
-2. Follow the menu options:
-   - 1: Add Note
-   - 2: List Notes
-   - 3: Delete Note
-   - 4: Search Notes
-   - 5: Exit
+---
 
-All changes are saved automatically to `notesList.json`.
+## 🛠️ Technologies Used
 
-## Requirements
+- Python 3
+- SQLite (`sqlite3` module)
+- SQL (CRUD operations)
 
-- Python 3.x
+---
+
+## 📂 Project Structure
+
+- notes.py # Main application
+─ notes.db # SQLite database (auto-created)
+─ README.md
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/azraoztrk/Notes-Project---python.git
+2. Navigate to the project folder:
+   cd notesProject
+3.Run the application:
+   python notes.py
